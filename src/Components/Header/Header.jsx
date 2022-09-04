@@ -1,21 +1,21 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar'
 import CartWidget from '../CartWidget/CartWidget'
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import './Header.css';
 
 
 const Header = () => {
-    const greeting = "Hola usuario de mi página"
     
     return (
         <>
         <header>
-            <Navbar />
-            <div class="titulo">pimp my wall</div>
-            <CartWidget />
+            <div class="header-envios">6 CUOTAS SIN INTERES // ENVÍOS A TODO EL PAÍS</div>
+            <div class="header-navbar">
+                <Navbar />
+                <div class="titulo">pimp my wall</div>
+                <CartWidget />
+            </div>
         </header>
-        <ItemListContainer greeting={greeting}/>
         </>
     )
 }
