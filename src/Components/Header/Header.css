@@ -1,25 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #d0bef2;
 }
 
-.logo, .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    padding-left: 0.6rem;
-}
-
-.navbar {
-    padding-right: 0.9rem;
-}
-
-.logo-imagen {
-    padding-right: 0.6rem;
+.titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white
 }
