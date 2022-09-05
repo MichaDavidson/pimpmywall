@@ -16,9 +16,9 @@ const Navbar = () => {
                 <Portal>
                     <MenuList>
                         <MenuItem>Playa</MenuItem>
-                        <MenuItem>Bosque</MenuItem>
-                        <MenuItem>Montaña</MenuItem>
+                        <MenuItem>Boho y Terra</MenuItem>
                         <MenuItem>Mundo</MenuItem>
+                        <MenuItem>Sets</MenuItem>
                     </MenuList>
                 </Portal>
             </Menu>

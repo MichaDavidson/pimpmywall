@@ -9,24 +9,6 @@ footer {
     font-family: 'Quicksand', sans-serif;
 }
 
-.footer-ig {
-    width: 100vw;
-    background-image: url(../../Assets/footer-bg.jpg);
-}
-
-.ig-instagram {
-    font-size: 3rem;
-    padding: 2rem;
-}
-
-.ig-seguinos {
-    font-size: 1.5rem;
-    background-color: white;
-    padding: 1rem;
-    width: 100px;
-    border-radius: 20px;
-}
-
 .footer-container {
     background-color: #d0bef2;
     width: 100vw;
