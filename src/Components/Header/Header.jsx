@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <>
         <header>
-            <div class="header-envios">6 CUOTAS SIN INTERES // ENVÍOS A TODO EL PAÍS</div>
-            <div class="header-navbar">
+            <div className="header-envios">6 CUOTAS SIN INTERES // ENVÍOS A TODO EL PAÍS</div>
+            <div className="header-navbar">
                 <Navbar />
-                <div class="titulo">pimp my wall</div>
+                <div className="titulo">pimp my wall</div>
                 <CartWidget />
             </div>
         </header>

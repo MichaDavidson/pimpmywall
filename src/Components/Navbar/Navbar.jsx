@@ -5,7 +5,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
     return (
-        <div class="navbar">
+        <div className="navbar">
             <Menu>
             <MenuButton
                 as={IconButton}
