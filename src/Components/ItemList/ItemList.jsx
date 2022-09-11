@@ -1,8 +1,13 @@
+import { VStack } from '@chakra-ui/react'
 import React from 'react'
+import Item from '../Item/Item'
 
-const ItemList = () => {
+const ItemList = ({listaProductos}) => {
+
   return (
-    <div>Hola soy ItemList</div>
+    <VStack>
+        {listaProductos.map(producto => <Item key={`${producto.producto}-${producto.id}`} producto={producto}/>)}
+    </VStack>
   )
 }
 

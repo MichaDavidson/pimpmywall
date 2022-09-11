@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from '@chakra-ui/react'
+import { Button, VStack } from '@chakra-ui/react'
 import './ItemCount.css'
 
 const ItemCount = ({stock, initial, onAdd}) => {
@@ -16,14 +16,14 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return (
-    <>
-    <div>
-        <Button disabled={contador === stock} onClick={sumarProductos}>+</Button>
-        <div>{contador}</div>
-        <Button disabled={contador === initial} onClick={restarProductos}>-</Button>
-    </div>
-    <Button onClick={agregarAlCarrito}>Me lo llevo!</Button>
-    </>
+    <VStack>
+        <div className='counter'>
+            <Button className="counter-botones" disabled={contador === stock} onClick={sumarProductos}>+</Button>
+            <div className="counter-cantidad">{contador}</div>
+            <Button className="counter-botones" disabled={contador === initial} onClick={restarProductos}>-</Button>
+        </div>
+        <Button onClick={agregarAlCarrito}>Me lo llevo!</Button>
+    </VStack>
   )
 }
 
