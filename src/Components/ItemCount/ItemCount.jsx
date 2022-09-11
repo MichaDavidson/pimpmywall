@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
+import { Button } from '@chakra-ui/react'
 import './ItemCount.css'
 
 const ItemCount = ({stock, initial, onAdd}) => {
+
+    const [contador, setContador] = useState(initial);
+
+    const sumarProductos = () => contador < stock && setContador(contador + 1)
+    
+    const restarProductos = () => contador > initial && setContador(contador - 1)
   
-    const [contador, setContador] = useState(1);
-
-    const sumarProductos = () => {
-            setContador(contador + 1);
-    }
-
-    const restarProductos = () => {
-        setContador(contador - 1);
-    }
-
     const agregarAlCarrito = () => {
         onAdd(contador);
         setContador(1);
@@ -21,11 +18,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
     return (
     <>
     <div>
-        <button onClick={sumarProductos}>+</button>
+        <Button disabled={contador === stock} onClick={sumarProductos}>+</Button>
         <div>{contador}</div>
-        <button onClick={restarProductos}>-</button>
+        <Button disabled={contador === initial} onClick={restarProductos}>-</Button>
     </div>
-    <button onClick={agregarAlCarrito}>Me lo llevo!</button>
+    <Button onClick={agregarAlCarrito}>Me lo llevo!</Button>
     </>
   )
 }
