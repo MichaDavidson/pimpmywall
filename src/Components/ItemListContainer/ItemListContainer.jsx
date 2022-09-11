@@ -4,6 +4,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import ItemList from '../ItemList/ItemList'
 import { productos } from '../../Assets/productos'
 import { promesa } from '../../Assets/promesa'
+import { Spinner } from '@chakra-ui/react';
 
 const ItemListContainer = (props) => {
 
@@ -16,17 +17,21 @@ const ItemListContainer = (props) => {
     };
 
     const [listaProductos, setListaProductos] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         promesa(productos)
-            .then(res => setListaProductos(res))
+            .then(res => {
+                setLoading(false)
+                setListaProductos(res)
+            })
     }, []);
     
     return(
         <>
             <div className="container">{props.greeting}</div>
             <ItemCount stock={stock} initial={initial} onAdd={onAdd}/>
-            <ItemList listaProductos={listaProductos} />
+            {loading ? <Spinner /> : <ItemList listaProductos={listaProductos} />}
         </>
     )
 }
