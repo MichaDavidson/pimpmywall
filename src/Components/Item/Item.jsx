@@ -1,16 +1,15 @@
 import React from 'react'
-import { Image, Button, VStack, Box } from '@chakra-ui/react'
+import { Image, Button, Box, Spacer } from '@chakra-ui/react'
 
 const Item = ({producto}) => {
     return (
-    <VStack>
-        <Box>
-          <Image src={producto.imagen} />
-          <div>{producto.producto}</div>
-          <div>{producto.precio}</div>
-          <Button>Ver más</Button>
-        </Box>
-    </VStack>
+      <Box>
+        <Image src={producto.imagen} />
+        <div>{producto.producto}</div>
+        <div>{producto.precio}</div>
+        <Button>Ver más</Button>
+        <Spacer />
+      </Box>
   )
 }
 
