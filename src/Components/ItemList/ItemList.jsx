@@ -5,7 +5,7 @@ import Item from '../Item/Item'
 const ItemList = ({listaProductos}) => {
 
   return (
-    <Flex justify="center" align="center" wrap="wrap">
+    <Flex justify="space-around" align="center" wrap="wrap">
         {listaProductos.map(producto => <Item key={`${producto.producto}-${producto.id}`} producto={producto}/>)}
     </Flex>
   )
