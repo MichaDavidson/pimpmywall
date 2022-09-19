@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { productos } from '../../Assets/productos'
 import { promesa } from '../../Assets/promesa'
-import { Spinner } from '@chakra-ui/react';
+import { Spinner } from '@chakra-ui/react'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = () => {
@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
 
   return (
     <>
-      {!loading ? <ItemDetail listProduct={listProduct}/> : <Spinner />}
+      {!loading ? <Spinner /> : <ItemDetail listProduct={listProduct}/>}
     </>
   )
 }
