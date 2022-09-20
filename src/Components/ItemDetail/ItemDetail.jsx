@@ -1,12 +1,11 @@
 import React from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 
 const ItemDetail = ({listProduct}) => {
   
-  console.log(listProduct)
   return (
     <Box p="1rem" m="1.5rem" border="0.1rem solid #9d8189" display="flex" flexDir="column" alignItems="center">
-      <div>{listProduct.imagen}</div>
+      <Image src={listProduct.imagen} w="20rem" h="22rem"/>
       <p>{listProduct.producto}</p>
       <p>{listProduct.precio}</p>
       <p>{listProduct.descripcion}</p>
