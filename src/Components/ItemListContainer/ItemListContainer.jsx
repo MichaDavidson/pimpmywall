@@ -5,31 +5,38 @@ import ItemList from '../ItemList/ItemList'
 import { productos } from '../../Assets/productos'
 import { promesa } from '../../Assets/promesa'
 import { Spinner } from '@chakra-ui/react';
+import { useParams } from 'react-router-dom';
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
 
-    const stock = 20;
+    // const stock = 20;
     
-    const initial = 1;
+    // const initial = 1;
 
-    const onAdd = (contador) => {
-        console.log(`Agregaste ${contador} al carrito!`);
-    };
+    // const onAdd = (contador) => {
+    //     console.log(`Agregaste ${contador} al carrito!`);
+    // };
 
+    let { IdCategoria } = useParams();
+    
     const [listaProductos, setListaProductos] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         promesa(productos)
             .then(res => {
-                setLoading(false)
-                setListaProductos(res)
+                if (IdCategoria){
+                    setLoading(false)    
+                    setListaProductos(res.filter(producto => producto.categoria === IdCategoria))
+                } else {
+                    setLoading(false)
+                    setListaProductos(res)
+                }
             })
-    }, []);
+    }, [IdCategoria]);
     
     return(
         <>
-            {/* <div className="container">{props.greeting}</div> */}
             {/* <ItemCount stock={stock} initial={initial} onAdd={onAdd}/> */}
             {loading ? <Spinner /> : <ItemList listaProductos={listaProductos} />}
         </>

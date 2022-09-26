@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css'
-import {Menu, MenuButton, MenuList, MenuItem, Portal, IconButton} from '@chakra-ui/react'
+import {Menu, MenuButton, MenuList, Portal, IconButton, MenuItem} from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -15,10 +16,10 @@ const Navbar = () => {
             />
                 <Portal>
                     <MenuList>
-                        <MenuItem>Playa</MenuItem>
-                        <MenuItem>Boho y Terra</MenuItem>
-                        <MenuItem>Mundo</MenuItem>
-                        <MenuItem>Sets</MenuItem>
+                        <Link to="/categoria/playa"><MenuItem>Playa</MenuItem></Link>
+                        <Link to="/categoria/bohoyterra"><MenuItem>Boho y Terra</MenuItem></Link>
+                        <Link to="/categoria/mundo"><MenuItem>Mundo</MenuItem></Link>
+                        <Link to="/categoria/sets"><MenuItem>Sets</MenuItem></Link>
                     </MenuList>
                 </Portal>
             </Menu>

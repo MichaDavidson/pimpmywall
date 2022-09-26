@@ -4,17 +4,29 @@ import Header from './Components/Header/Header'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 import Footer from './Components/Footer/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
+import Cart from './Components/Cart/Cart'
 
 function App() {
-  const greeting = "Hola usuario de mi página"
 
   return (
-    <ChakraProvider>
-      <Header />
-      <ItemListContainer greeting={greeting}/>
-      <ItemDetailContainer />
-      <Footer />
-    </ChakraProvider>
+    <BrowserRouter>
+      <ChakraProvider>
+        <Header />
+        <Routes>
+
+          <Route path="/" element={<ItemListContainer />}/>
+          
+          <Route path="/categoria/:IdCategoria" element={<ItemListContainer />}/>
+          
+          <Route path="/producto/:IdProducto" element={<ItemDetailContainer />}/>
+          
+          <Route path="/cart" element={<Cart />}/>
+          
+        </Routes>
+        <Footer />
+      </ChakraProvider>
+    </BrowserRouter>
   );
 }
 

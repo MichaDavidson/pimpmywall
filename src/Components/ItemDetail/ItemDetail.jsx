@@ -1,14 +1,15 @@
 import React from 'react'
 import { Box, Image } from '@chakra-ui/react'
+import './ItemDetail.css'
 
 const ItemDetail = ({listProduct}) => {
   
   return (
-    <Box p="1rem" m="1.5rem" border="0.1rem solid #9d8189" display="flex" flexDir="column" alignItems="center">
+    <Box className="box">
       <Image src={listProduct.imagen} w="20rem" h="22rem"/>
-      <p>{listProduct.producto}</p>
-      <p>{listProduct.precio}</p>
-      <p>{listProduct.descripcion}</p>
+      <p className='producto-titulo'>{listProduct.producto}</p>
+      <p className='producto-precio'>${listProduct.precio}</p>
+      <p className='texto'>{listProduct.descripcion}</p>
     </Box>
   )
 }
