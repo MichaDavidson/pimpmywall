@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Box, Image } from '@chakra-ui/react'
+import { Box, Image, Button } from '@chakra-ui/react'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount' 
-import FinalizarCompra from '../FinalizarCompra/FinalizarCompra'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({listProduct}) => {
   
@@ -23,7 +23,7 @@ const ItemDetail = ({listProduct}) => {
       <p className='producto-titulo'>{listProduct.producto}</p>
       <p className='producto-precio'>${listProduct.precio}</p>
       <p className='texto'>{listProduct.descripcion}</p>
-      {compra ? <ItemCount stock={stock} initial={initial} onAdd={onAdd}/> : <FinalizarCompra compra={compra}/>}
+      {compra ? <Link to="/cart"><Button m="1rem">Finalizar compra</Button></Link> : <ItemCount stock={stock} initial={initial} onAdd={onAdd}/>}
     </Box>
   )
 }
