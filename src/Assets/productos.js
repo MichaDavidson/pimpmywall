@@ -1,8 +1,33 @@
+import img1 from '../imagenes/playa1.png'
+import img2 from '../imagenes/playa2.jpeg'
+import img3 from '../imagenes/playa3.png'
+import img4 from '../imagenes/playa4.jpeg'
+import img5 from '../imagenes/playa5.png'
+import img6 from '../imagenes/playa6.png'
+import img7 from '../imagenes/byt1.png'
+import img8 from '../imagenes/byt2.png'
+import img9 from '../imagenes/byt3.png'
+import img10 from '../imagenes/byt4.png'
+import img11 from '../imagenes/byt5.png'
+import img12 from '../imagenes/byt6.png'
+import img13 from '../imagenes/mundo1.png'
+import img14 from '../imagenes/mundo2.png'
+import img15 from '../imagenes/mundo3.png'
+import img16 from '../imagenes/mundo4.png'
+import img17 from '../imagenes/mundo5.png'
+import img18 from '../imagenes/mundo6.png'
+import img19 from '../imagenes/sets1.png'
+import img20 from '../imagenes/sets2.png'
+import img21 from '../imagenes/sets3.png'
+import img22 from '../imagenes/sets4.png'
+import img23 from '../imagenes/sets5.png'
+import img24 from '../imagenes/sets6.png'
+
 export const productos = [
 
 {
     id:1,
-    imagen:"./imagenes/playa1.png",
+    imagen: img1,
     producto:"Playa Paciencia",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -12,7 +37,7 @@ export const productos = [
     
 {
     id:2,
-    imagen:"./imagenes/playa2.jpeg",
+    imagen:img2,
     producto:"Surfers en la Playa",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -22,7 +47,7 @@ export const productos = [
 
 {
     id:3,
-    imagen:"./imagenes/playa3.png",
+    imagen:img3,
     producto:"Palms Forever",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -32,7 +57,7 @@ export const productos = [
 
 {
     id:4,
-    imagen:"./imagenes/playa4.jpeg",
+    imagen:img4,
     producto:"Camioneta VW Aqua",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -42,7 +67,7 @@ export const productos = [
 
 {
     id:5,
-    imagen:"./imagenes/playa5.png",
+    imagen:img5,
     producto:"Beach Forever",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -52,7 +77,7 @@ export const productos = [
 
 {
     id:6,
-    imagen:"./imagenes/playa6.png",
+    imagen:img6,
     producto:"Pool Time",
     categoria:"playa",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -62,7 +87,7 @@ export const productos = [
 
 {
     id:7,
-    imagen:"./imagenes/byt1.png",
+    imagen:img7,
     producto:"Plantas De Paz",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -72,7 +97,7 @@ export const productos = [
 
 {
     id:8,
-    imagen:"./imagenes/byt2.png",
+    imagen:img8,
     producto:"Gratitud",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -82,7 +107,7 @@ export const productos = [
 
 {
     id:9,
-    imagen:"./imagenes/byt3.png",
+    imagen:img9,
     producto:"La Luna Y La Flor",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -92,7 +117,7 @@ export const productos = [
 
 {
     id:10,
-    imagen:"./imagenes/byt4.png",
+    imagen: img10,
     producto:"El Trigo En El Campo",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -102,7 +127,7 @@ export const productos = [
 
 {
     id:11,
-    imagen:"./imagenes/byt5.png",
+    imagen:img11,
     producto:"Horizonte Profundo",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -112,7 +137,7 @@ export const productos = [
 
 {
     id:12,
-    imagen:"./imagenes/byt6.png",
+    imagen:img12,
     producto:"Montañas De Invierno",
     categoria:"bohoyterra",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -122,7 +147,7 @@ export const productos = [
 
 {
     id:13,
-    imagen:"./imagenes/mundo1.png",
+    imagen:img13,
     producto:"Mundo Georgráfico",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -132,7 +157,7 @@ export const productos = [
 
 {
     id:14,
-    imagen:"./imagenes/mundo2.png",
+    imagen:img14,
     producto:"La Isla Del Sol",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -142,7 +167,7 @@ export const productos = [
 
 {
     id:15,
-    imagen:"./imagenes/mundo3.png",
+    imagen:img15,
     producto:"London Bridge",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -152,7 +177,7 @@ export const productos = [
 
 {
     id:16,
-    imagen:"./imagenes/mundo4.png",
+    imagen:img16,
     producto:"Rome",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -162,7 +187,7 @@ export const productos = [
 
 {
     id:17,
-    imagen:"./imagenes/mundo5.png",
+    imagen:img17,
     producto:"Hello",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -172,7 +197,7 @@ export const productos = [
 
 {
     id:18,
-    imagen:"./imagenes/mundo6.png",
+    imagen:img18,
     producto:"Tiny Houses",
     categoria:"mundo",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -182,7 +207,7 @@ export const productos = [
 
 {
     id:19,
-    imagen:"./imagenes/sets1.png",
+    imagen:img19,
     producto:"Color Naranja",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -192,7 +217,7 @@ export const productos = [
 
 {
     id:20,
-    imagen:"./imagenes/sets2.png",
+    imagen:img20,
     producto:"Color Amarillo",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -202,7 +227,7 @@ export const productos = [
 
 {
     id:21,
-    imagen:"./imagenes/sets3.png",
+    imagen:img21,
     producto:"Color ByN",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -212,7 +237,7 @@ export const productos = [
 
 {
     id:22,
-    imagen:"./imagenes/sets4.png",
+    imagen:img22,
     producto:"Color Tierra",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -222,7 +247,7 @@ export const productos = [
 
 {
     id:23,
-    imagen:"./imagenes/sets5.png",
+    imagen:img23,
     producto:"Color Planta",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",
@@ -232,7 +257,7 @@ export const productos = [
 
 {
     id:24,
-    imagen:"./imagenes/sets6.png",
+    imagen:img24,
     producto:"Color Final",
     categoria:"sets",
     descripcion:"PONELE ONDA A TU HOGAR CON NUESTROS DISEÑOS SÚPER CANCHEROS. ESTE PRODUCTO ES UN CUADRO LISTO PARA COLGAR. INCLUYE: LÁMINA IMPRESA EN PAPEL DE ALTO GRAMAJE, MARCO TIPO CAJÓN DE MADERA MARUPÁ BOX, VIDRIO DE 2MM Y ACCESORIOS PARA COLGAR.ESTE PRODUCTO SE HACE A PEDIDO, EXCLUSIVAMENTE PARA VOS, Y TIENE UNA DEMORA DE PRODUCCION.",

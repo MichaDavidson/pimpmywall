@@ -9,14 +9,6 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
-    // const stock = 20;
-    
-    // const initial = 1;
-
-    // const onAdd = (contador) => {
-    //     console.log(`Agregaste ${contador} al carrito!`);
-    // };
-
     let { IdCategoria } = useParams();
     
     const [listaProductos, setListaProductos] = useState([]);
@@ -37,7 +29,6 @@ const ItemListContainer = () => {
     
     return(
         <>
-            {/* <ItemCount stock={stock} initial={initial} onAdd={onAdd}/> */}
             {loading ? <Spinner /> : <ItemList listaProductos={listaProductos} />}
         </>
     )
