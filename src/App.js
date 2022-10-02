@@ -6,26 +6,24 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 import Footer from './Components/Footer/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 import Cart from './Components/Cart/Cart'
+import CustomProvider from './Context/CartContext';
 
 function App() {
 
   return (
     <BrowserRouter>
-      <ChakraProvider>
-        <Header />
-        <Routes>
-
-          <Route path="/" element={<ItemListContainer />}/>
-          
-          <Route path="/categoria/:IdCategoria" element={<ItemListContainer />}/>
-          
-          <Route path="/producto/:IdProducto" element={<ItemDetailContainer />}/>
-          
-          <Route path="/cart" element={<Cart />}/>
-          
-        </Routes>
-        <Footer />
-      </ChakraProvider>
+      <CustomProvider>
+        <ChakraProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />}/>
+            <Route path="/categoria/:IdCategoria" element={<ItemListContainer />}/>
+            <Route path="/producto/:IdProducto" element={<ItemDetailContainer />}/>
+            <Route path="/cart" element={<Cart />}/>
+          </Routes>
+          <Footer />
+        </ChakraProvider>
+      </CustomProvider>
     </BrowserRouter>
   );
 }

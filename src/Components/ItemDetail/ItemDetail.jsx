@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Box, Image, Button } from '@chakra-ui/react'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount' 
 import { Link } from 'react-router-dom'
+import { useCartContext } from '../../Context/CartContext'
 
 const ItemDetail = ({listProduct}) => {
   
@@ -13,9 +14,10 @@ const ItemDetail = ({listProduct}) => {
 
     const onAdd = (contador) => {
       setCompra(true);
-      console.log(`Agregaste ${contador} al carrito!`);
+      addItem();
     };
 
+    const { addItem } = useContext(useCartContext)
 
   return (
     <Box className="box">
