@@ -12,13 +12,15 @@ const ItemDetail = ({listProduct}) => {
 
     const [compra, setCompra ] = useState(false);
 
-    const onAdd = (contador) => {
+    const { addItem, cart } = useContext(useCartContext)
+
+    const onAdd = (quantity) => {
       setCompra(true);
-      addItem();
+      addItem(listProduct, quantity);
     };
 
-    const { addItem } = useContext(useCartContext)
-
+    console.log(cart)
+    
   return (
     <Box className="box">
       <Image src={listProduct.imagen} w="20rem" h="22rem"/>
