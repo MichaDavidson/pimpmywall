@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { Box, Image, Button } from '@chakra-ui/react'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount' 
@@ -12,14 +12,13 @@ const ItemDetail = ({listProduct}) => {
 
     const [compra, setCompra ] = useState(false);
 
-    const { addItem, cart } = useContext(useCartContext)
+    const { addItem } = useCartContext()
 
     const onAdd = (quantity) => {
       setCompra(true);
       addItem(listProduct, quantity);
     };
 
-    console.log(cart)
     
   return (
     <Box className="box">

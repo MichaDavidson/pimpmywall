@@ -7,19 +7,19 @@ const CartContextProvider = ({children}) => {
  
   const [cart, setCart] = useState([])
 
-  const addItem = (item, quantity) => {
+  const addItem = (item, cantidad) => {
     if(isInCart(item.id)){
       const newCart = cart.map(producto => {
         if (producto.id === item.id) {
-          const newQuantity = producto.quantity + quantity;
-          return {...producto, quantity: newQuantity}
+          const newQuantity = producto.cantidad + cantidad;
+          return {...producto, cantidad: newQuantity}
         } else {
           return producto;
         }
       })
       setCart(newCart)
     } else{
-      const newProduct = {...item, quantity: quantity}  
+      const newProduct = {...item, cantidad: cantidad}  
       setCart([...cart, newProduct])
     }
   }
@@ -39,11 +39,11 @@ const CartContextProvider = ({children}) => {
   }
 
   const totalPrice = () => {
-    return cart.reduce((acc, product) => acc += product.precio * product.quantity)
+    return cart.reduce((acc, product) => acc += product.precio * product.cantidad)
   }
 
   const totalQuantity = () => {
-    return cart.reduce((acc, product) => acc += product.quantity, 0)
+    return cart.reduce((acc, product) => acc += product.cantidad, 0)
   }
 
   return (
