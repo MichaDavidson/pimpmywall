@@ -1,35 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import './ItemListContainer.css'
-// import ItemCount from '../ItemCount/ItemCount'
 import ItemList from '../ItemList/ItemList'
-import { productos } from '../../Assets/productos'
-import { promesa } from '../../Assets/promesa'
-import { Spinner } from '@chakra-ui/react';
+// import { Spinner } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
+import { db } from '../../Firebase/firebase'
+import { getDocs, collection, query, where } from 'firebase/firestore'
 
 const ItemListContainer = () => {
 
-    let { IdCategoria } = useParams();
+    const { IdCategoria } = useParams();
     
     const [listaProductos, setListaProductos] = useState([]);
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
+    
 
     useEffect(() => {
-        promesa(productos)
-            .then(res => {
-                if (IdCategoria){
-                    setLoading(false)    
-                    setListaProductos(res.filter(producto => producto.categoria === IdCategoria))
-                } else {
-                    setLoading(false)
-                    setListaProductos(res)
+        const productsCollection = collection(db, 'products');
+        const q = query(productsCollection, where('categoria', '==', IdCategoria || null))
+        getDocs(IdCategoria ? q : productsCollection)
+        .then((data)=> {
+            const listProducts = data.docs.map((producto) => {
+                return {
+                    ...producto.data(),
+                    id: producto.id
                 }
             })
-    }, [IdCategoria]);
-    
+            setListaProductos(listProducts)
+        })
+    }, [IdCategoria])
+     
     return(
         <>
-            {loading ? <Spinner /> : <ItemList listaProductos={listaProductos} />}
+            <ItemList listaProductos={listaProductos} />
+            {/* {loading ? <Spinner /> : <ItemList listaProductos={listaProductos} />} */}
         </>
     )
 }
