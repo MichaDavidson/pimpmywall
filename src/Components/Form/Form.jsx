@@ -32,8 +32,7 @@ const Form = () => {
           total: totalPrice
         })
         .then(res => {
-          console.log(res.id);
-          swal({
+            swal({
             title: "Compra finalizada!",
             text: "Tu compra fue realizada con éxito, " + datos.Nombre + ". Tu número de seguimiento es: " + res.id,
             icon: "success",

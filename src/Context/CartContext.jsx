@@ -39,9 +39,12 @@ const CartContextProvider = ({children}) => {
   }
 
   const totalPrice = () => {
-    return cart.reduce((acc, product) => acc += product.precio * product.cantidad)
+    let resultado = 0;
+    cart.forEach((producto) => resultado += producto.precio * producto.cantidad)
+    return resultado;
   }
 
+  
   const totalQuantity = () => {
     return cart.reduce((acc, product) => acc += product.cantidad, 0)
   }

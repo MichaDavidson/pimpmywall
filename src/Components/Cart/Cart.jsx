@@ -6,6 +6,7 @@ const Cart = () => {
   
   const { cart, totalPrice, removeItem, clear } = useCartContext()
   
+  console.log(cart)
 
   return (
     <>
